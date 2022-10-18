@@ -1,0 +1,17 @@
+When to use Builder?
+    1.  When multiple representation of same product need to be designed, like igloo house and normal house
+    2.  When too many attributes in main class
+    3.  When you need to validate incoming attribute values before creating an object
+
+Implemetation steps:
+    1.  Declare common contruction steps/methods to build a product, in an interface.
+    2.  Create main class with all the required attributes.
+    3.  Create builder classes and implement setter methods(methods declared in interface (point 1))
+    4.  Implememt a method to fetch the resultn(getHouse()). This method may/may not be decalared in the interface.
+    5.  Create a director class, with builder interface as its attribute
+    6.  Define method for director to set builders and method to sequentially call all the construction methods declared in interface
+    7.  Client code or main() creates builder and director object and the call director method to get the final product
+
+Referance:
+    https://refactoring.guru/design-patterns/builder
+    https://refactoring.guru/design-patterns/builder/go/example
