@@ -1,0 +1,10 @@
+When?
+    When you have to create a lots of very similar objects where you’ve some default data to be added while creating those objects
+
+How to implement:
+    1.  Create a Prototype interface with a clone() method in interface
+    2.  Create a main struct with different setter and a clone() method.
+    3.  Create a map to store different category of object(key: category of an object, value: object itself), with default data of that category being set
+    4.  Clone() method of main struct will return a copy of object
+    5.  New instance will call clone() thru type of an object stored in registry
+    6.  Set values (non default) for new instance
