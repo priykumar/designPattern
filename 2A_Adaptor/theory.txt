@@ -1,0 +1,4 @@
+When?
+    When you want to use some existing class, but its interface isn’t compatible with the rest of your code
+
+How to implement:
