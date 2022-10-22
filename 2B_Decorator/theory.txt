@@ -1,0 +1,18 @@
+When?
+    when you need to be able to assign extra behaviors to objects at runtime without breaking the code that uses these objects
+
+How to implememt?
+    1.  Define an interface with common method across all the structs
+    2.  Define a base struct with its attributes and define methods present in interface for base class
+    3.  Create structs for each addOns and each struct will have methods (step 1) defined
+    4.  All the base structs and addOns will have interface as an attrubute
+    5.  In main(), start with a base struct and assign an addOn object to interface attribute.
+
+    main() will look something like this
+    a := baseClass {
+        interfaceVar: &addOn1 {
+            interfaceVar: &add0n2 {
+                interfaceVar: &addOn3{}
+            }
+        }
+    }
